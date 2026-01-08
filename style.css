@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* NAVIGATION */
+header {
+    background: #111;
+    padding: 20px;
+}
+
+.nav {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #fff;
+    font-size: 22px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav ul li {
+    margin-left: 20px;
+}
+
+.nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 6px 10px;
+    border-radius: 4px;
+}
+
+.nav ul li a:hover {
+    background-color: #fff;
+    color: #111;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: #fff;
+}
+
+.hero h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+    color: #555;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 10px;
+    border: 2px solid #111;
+    color: #111;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn.primary {
+    background: #111;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: #111;
+    color: #fff;
+    opacity: 0.85;
+}
+
+/* HIGHLIGHTS */
+.highlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    color: #fff;
+    margin-top: 40px;
+}
+
+/* EMAIL LINK STYLING */
+.email-link {
+    color: #0077cc;   /* Default color */
+    text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.email-link:hover {
+    color: #fff;        /* Hover color */
+    background-color: #111; /* Optional background on hover */
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .nav ul {
+        display: none;
+    }
+}
